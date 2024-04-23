@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo de JavaScript en el HEAD dentro de las tags: script</title>
+    <script>
+      alert("Hola mundo");
+    </script>
+  </head>
+
+  <body></body>
+</html>
+//
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Ejemplo de JavaScript en el head con llamada desde la etiqueta: p
+    </title>
+
+    <p onclick="alert('Hola mundo');">Página de prueba JavaScript</p>
+  </head>
+  <body></body>
+</html>
+//
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linkar una página JavaScript a nuestro HTML en el HEAD </title>
+
+    <script src="nombre_de_la_pagina_JavaScript.js"></script>
+    <head>
+  <body></body>
+</html>
+//
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrada y Salida - Alerta de Confirmación</title>
+    <script>
+      var confirmacion = confirm("¿Estas seguro de continuar?");
+    </script>
+  </head>
+  <body></body>
+</html>
+//
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrada y Salida - Console log</title>
+    <script>
+      console.log("Esto es un mensaje escrito por consola");
+    </script>
+  </head>
+  <body></body>
+</html>
+//
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrada y Salida - Alerta Normal</title>
+    <script>
+      alert("Esto es una alerta");
+    </script>
+  </head>
+  <body></body>
+</html>
+//
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrada y Salida - Document write</title>
+    <script>
+      var nombre = "Angel";
+      var apellido = "Garcia";
+      document.write("<h1>Tu nombre es</h1>" + nombre + " " + apellido);
+    </script>
+  </head>
+  <body></body>
+</html>
+//
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrada y Salida - Document write</title>
+    <script>
+      /*
+     Ejemplo de comentario de varias lineas. 
+     Siempre va entre los signos de asterisco y barra invetida 
+      */
+
+      //Salida por ventana emergente
+      alert("Esto es una ventana emergente.");
+
+      //Entrada de datos
+      var edad = prompt("Introduzca edad:");
+
+      //Salida de datos leyendo desde una variable
+      alert("La edad introducida es: " + edad);
+
+      //Salida de datos por consola
+      console.log("Ha terminado el programa");
+
+      //Salida e datos al BODY de mi pagina
+      document.write("<h1>Esto es un H1 puesto desde JavaScript</h1>");
+    </script>
+  </head>
+  <body></body>
+</html>
+//
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrada y Salida - Prompt</title>
+
+    <script>
+      var nombre = prompt("Introduce nombre? ", "nombre por defecto");
+      alert("Hola " + nombre);
+      var edad = prompt("Que edad tienes?: ", 18);
+    </script>
+  </head>
+  <body></body>
+</html>
+//
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables - Casting de Variables</title>
+
+    <script>
+      /*
+        Si necesitamos convertir un string a number tenemos do opciones:
+        1. Usar la función Number()
+        2. Usar parseInt
+
+        De igual forma tenemos disponible la funcion parseFloat() para
+        convertir string a números decimales
+        */
+
+      //1. Usar la función Number()
+      var num1 = 45;
+      Resultado = num1 + Number(num2);
+
+      //2. Usar parseInt
+      alert(parseInt(num2) + 23);
+
+      /*CONSTANTES
+      Por definición, una variable es un espacio en la memoria del 
+      ordenador donde se guardará un valor, que puede cambiar a lo
+      largo de la ejecución del programa. En el caso de una constante,
+      se define como un espacio en la memoria del ordenador donde se 
+      guardará un valor, que NO puede cambiar a lo largo de la ejecución
+      del programa. Es decir, si declaramos una constante y dentro guardamos
+      un valor, dicho valor ya no podrá ser modificado
+      */
+
+      //Ejemplo de Constante 1:
+      const PI = 3.14;
+      PI = 3.1416;
+
+      // Ejemplo de Constante 2:
+      const nombre = "Antonio";
+    </script>
+  </head>
+  <body></body>
+</html>
+//
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables - Ejemplos de operaciones con variables</title>
+
+    <script>
+      /*
+        Podemos trabajar con números, strings y booleans en JavaScript
+        Declaración de variables:
+        - No puede empezar por un número: Esto dará error:  var 2_cliente;
+        - Evitar tildes y Ñ
+        */
+
+      //Variable correctamente declarada
+      let _numero;
+
+      //Inicialización de la variable
+      _numero = 10;
+
+      //Variable declarada e inicializada
+      var numero4 = 647;
+
+      //Se pueden declarar e inicializar varias variables a la vez
+      var a = 3,
+        b = 4,
+        c = 5;
+      /*
+        Sería lo mismo que poner:
+        var a=3;
+        let b=4;
+        var c=5;
+      */
+
+      // JavaScript es Case Sensitive. Distingue entre mayúsculas/minúsculas
+      var numero = 10;
+      var Numero = 20;
+
+      console.log("La variable 'numero' vale: " + numero);
+      console.log("La variable 'Numero' vale: " + Numero);
+
+      //Con variables numéricas podemos operar matemáticamente
+      var sumando1 = 35;
+      var sumando2 = 45;
+      var resultado = sumando1 + sumando2;
+      console.log(
+        "E resultado de sumar: " +
+          sumando1 +
+          "+ " +
+          sumando2 +
+          "es " +
+          resultado
+      );
+
+      // Operador modulo o resto de la division
+      var resto = 46 % 5;
+      console.log("El resto de 46 ÷ 5 es: " + resto);
+
+      //Operador incremento
+      var numeroInicial = 10;
+      let numeroIncrementado = ++numeroInicial;
+
+      console.log(
+        "El operador incremento sobre numeroInicial daría " + numeroIncrementado
+      );
+
+      //IMPORTANTE: No es lo mismo ++variable que variable++
+      var numero5 = 5;
+      document.write("El número antes del incremento vale " + numero5++);
+      document.write("<br>");
+      document.write("El número después del incremento vale " + numero5);
+
+      document.write("<br>");
+      document.write("<br>");
+
+      // Ahora al revés
+      let numero6 = 5;
+      document.write("El número antes del incremento vale " + ++numero6);
+      document.write("<br>");
+      document.write("El número después del incremento vale " + numero6);
+
+      //Constantes. Como las variables pero no se puede cambiar su valor
+      //se declaran en mayúsculas
+      const MICONSTANTE = 4765;
+      //MICONSTANTE = 345; Esto daría error
+
+      /*
+      Hay que declararlas e inicializarlas obligatoriamente.
+      const MICONSTANTE2; Esto daría error 
+      */
+    </script>
+  </head>
+  <body></body>
+</html>
