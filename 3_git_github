@@ -1,0 +1,6 @@
+Comandos
+$ git init
+$ git status -s
+$ git add README.md 
+$ git add . 
+-> La primera vez que hacemos un “commit” se nos pedirá nuestro mail y nombre.
