@@ -1,0 +1,88 @@
+Ejemplo en C++:
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Variables
+    int a = 5;
+    int b = 3;
+    int result;
+
+    // Operadores
+    result = a + b;
+
+    // Condicionales
+    if (result > 5) {
+        cout << "El resultado es mayor que 5" << endl;
+    } else {
+        cout << "El resultado es menor o igual que 5" << endl;
+    }
+
+    // Bucles
+    for (int i = 0; i < 5; i++) {
+        cout << "Iteración " << i << endl;
+    }
+
+    return 0;
+}
+Ejemplo en Java:
+public class Main {
+    public static void main(String[] args) {
+        // Variables
+        int a = 5;
+        int b = 3;
+        int result;
+
+        // Operadores
+        result = a + b;
+
+        // Condicionales
+        if (result > 5) {
+            System.out.println("El resultado es mayor que 5");
+        } else {
+            System.out.println("El resultado es menor o igual que 5");
+        }
+
+        // Bucles
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Iteración " + i);
+        }
+    }
+}
+Ejemplo en Python:
+# Variables
+a = 5
+b = 3
+
+# Operadores
+result = a + b
+
+# Condicionales
+if result > 5:
+    print("El resultado es mayor que 5")
+else:
+    print("El resultado es menor o igual que 5")
+
+# Bucles
+for i in range(5):
+    print("Iteración", i)
+Ejemplo en JavaScript:
+// Variables
+let a = 5;
+let b = 3;
+
+// Operadores
+let result = a + b;
+
+// Condicionales
+if (result > 5) {
+    console.log("El resultado es mayor que 5");
+} else {
+    console.log("El resultado es menor o igual que 5");
+}
+
+// Bucles
+for (let i = 0; i < 5; i++) {
+    console.log("Iteración", i);
+}
+Estos ejemplos muestran cómo se implementan elementos básicos de programación en cada uno de los lenguajes mencionados, permitiendo comparar y contrastar la sintaxis y la estructura en cada caso.
